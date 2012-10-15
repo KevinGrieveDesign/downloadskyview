@@ -1,0 +1,38 @@
+------------------DO NOT USE EQUAL SIGNS IN DESCRIPTION TEXT------------------
+
+This is a config file for the downloading from skyview. This is used by the script downloadskyviewimages.sh 
+
+This works by reading wo different variables similar to a csv but delimitered by a equals sign. 
+
+When there is no equals sign it checks to see what section we are in i.e "General Settings", "Catalogue Settings", "Folders","Folder Rules" about when to split the images into those files "Skyview Settings".
+ 
+## Please use a CSV file. 
+## for catalogue settings, the numbers refer to the column that it is located in. This is used for Glon, Glat and Number of voxels
+## when quicklook is true then skyview will use jpg nofits 
+
+
+-------------------NO DESCRIPTION TEXT AFTER HERE---------------------------
+General Settings
+Catalogue=../HOPS_HCCCN-DuchampCat.csv
+
+Catalogue Settings
+EmmissionName=1
+Glon=3
+Glat=4
+Voxel=20
+
+Folders
+
+
+
+Folder Rules
+
+Skyview Settings
+Survey=wise,wise12
+Projection=Arc
+Coordinates=galactic
+Quicklook=jpgnofits
+Size=0.5
+Pixel=100
+
+
